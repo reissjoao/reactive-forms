@@ -1,0 +1,22 @@
+<form [formGroup]="userForm" class="form-control m-2" (submit)="onSubmit()">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" formControlName="name" />
+  </div>
+
+  <div class="form-group mt-2">
+    <label for="username">Username</label>
+    <input type="text" class="form-control" id="username" formControlName="username" />
+  </div>
+  
+  <div class="form-group mt-2">
+    <label for="email">Email</label>
+    <input type="email" class="form-control" id="email" formControlName="email" />
+  </div>
+
+  <div class="form-group mt-2">
+    <label for="material">Material</label>
+    <input type="text" class="form-control" id="material" formControlName="material" />
+  </div>  
+    <button type="submit" class="btn btn-primary mt-3" [disabled]="!userForm.valid">Register</button>
+</form>
