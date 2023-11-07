@@ -22,12 +22,11 @@ export class UserFormComponent implements OnInit {
   }
 
   onSubmit() {
-    if (this.userForm.valid) {
-      const newUser = this.userForm.value;
-      this.userService.createUser(newUser).subscribe((user) => {
-        console.log('User created:', user);
-        this.userForm.reset();
-      });
-    }
+    const userData = this.userForm.value;
+    this.userService.createUser(userData).subscribe((response) => {
+      console.log('User created:', response);
+      this.userForm.reset();
+    });
   }
+
 }
