@@ -1,27 +1,32 @@
-# ReactiveForm
+# Projeto CRUD Formulário Reativo em Angular e Typescript
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.9.
+Projeto desenvolvido em Framework Angular e Typescript. Neste projeto, você encontrará uma aplicação de CRUD simples, mas eficiente, para adicionar, listar, editar e excluir usuários em um formulário reativo.
 
-## Development server
+## Funcionalidades do Projeto CRUD
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1. ``Criar (Create) - Adicionar um novo usuário ao banco de dados JSON Server.``
+2. ``Ler (Read) - Listar todos os usuários presentes no banco de dados JSON Server.``
+3. ``Atualizar (Update) - Editar as informações de um usuário específico.``
+4. ``Excluir (Delete) - Excluir um usuário do banco de dados JSON Server.``
 
-## Code scaffolding
+## Como usar a aplicação:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Passo 1: Clonar o repositório
 
-## Build
+1. Clone o repositório usando o comando: `git clone https://github.com/seu-usuario/nome-do-repositorio.git`
+2. Acesse a pasta do projeto usando o comando: `cd nome-do-repositorio`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Passo 2: Ative o servidor JSON Server para simular um banco de dados.
 
-## Running unit tests
+1. Instale o JSON Server globalmente em seu computador usando o comando: `npm install -g json-server`
+2. Inicie o JSON Server com o arquivo de dados `db.json` usando o comando: `json-server --watch db.json`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Passo 3: Inicie o projeto Angular
 
-## Running end-to-end tests
+1. ``ng serve``
+2. No navegador, acesse a URL: `http://localhost:4200/`
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Aproveite o uso deste aplicativo de exemplo para aprender sobre formulários reativos em Angular e operações CRUD.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Contribuição
+Sinta-se à vontade para contribuir com melhorias ou correções neste projeto. Abra um issue ou envie um pull request para colaborar.
