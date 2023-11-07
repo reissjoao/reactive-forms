@@ -18,9 +18,9 @@ export class UserListComponent implements OnInit {
   constructor(private userService: UserService, private formBuilder: FormBuilder) {
     this.userForm = this.formBuilder.group({
       name: ['', Validators.required],
-      username: ['', Validators.required],
+      lastname: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
-      material: ['', Validators.required]
+      username: ['', Validators.required]
     });
   }
 
@@ -44,9 +44,9 @@ export class UserListComponent implements OnInit {
     this.editingUser = user;
     this.userForm.patchValue({
       name: user.name,
-      username: user.username,
+      lastname: user.lastname,
       email: user.email,
-      material: user.material
+      username: user.username
     });
     this.idEditFormOpen = true;
   }
@@ -55,16 +55,13 @@ export class UserListComponent implements OnInit {
     if (this.editingUser) {
       const updatedUser: User = { ...this.editingUser, ...this.userForm.value };
       this.userService.updateUser(updatedUser).subscribe((response) => {
-        // Atualize a lista de usuários ou faça a lógica necessária após a atualização
         const index = this.users.findIndex(u => u.id === updatedUser.id);
         if (index !== -1) {
           this.users[index] = updatedUser;
-          this.editingUser = updatedUser; // Atualiza o objeto de edição com os novos dados
-        }
-  
+          this.editingUser = updatedUser;
+        }  
         this.idEditFormOpen = false;
       });
     }
-  }
-  
+  }  
 }

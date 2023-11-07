@@ -15,9 +15,9 @@ export class UserFormComponent implements OnInit {
   ngOnInit(): void {
     this.userForm = this.FormBuilder.group({
       name: ['', Validators.required],
-      username: ['', Validators.required],
+      lastname: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
-      material: ['', Validators.required]
+      username: ['', Validators.required]
     });
   }
 
@@ -25,6 +25,7 @@ export class UserFormComponent implements OnInit {
     const userData = this.userForm.value;
     this.userService.createUser(userData).subscribe((response) => {
       console.log('User created:', response);
+      alert("Usuário registrado!");
       this.userForm.reset();
     });
   }

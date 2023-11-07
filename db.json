@@ -1,18 +1,35 @@
 {
   "users": [
     {
-      "name": "editar",
-      "username": "editar",
-      "email": "editar@gmail.com",
-      "material": "editar",
-      "id": 1
+      "name": "João",
+      "username": "jones",
+      "email": "joao@domain.com",
+      "material": "",
+      "id": 1,
+      "lastname": "Reis"
     },
     {
-      "name": "wwwww",
-      "username": "wwwwww",
-      "email": "wwwwwww@wwwww",
-      "material": "www",
-      "id": 2
+      "name": "Maria",
+      "username": "maria",
+      "email": "maria@domain.com",
+      "material": "",
+      "id": 2,
+      "lastname": "Silva"
+    },
+    {
+      "name": "Fabio",
+      "username": "fabinho",
+      "email": "fabio@domain.com",
+      "material": "",
+      "id": 3,
+      "lastname": "Silva"
+    },
+    {
+      "name": "Ana",
+      "lastname": "Silva",
+      "email": "ana@domain.com",
+      "username": "ana",
+      "id": 4
     }
   ]
 }
